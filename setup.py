@@ -42,15 +42,16 @@ setuptools.setup(
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.10",
         "Operating System :: OS Independent",
     ],
     # Avoid bug in Protocol in python 3.9.7. Note that higher and lower versions of Python are fine.
     python_version="!=3.9.7",
     install_requires=[
-        "networkx==2.4",
+        "networkx>=2.4",
         "numpy>=1.20",
         "scipy>=1.4.1",
-        "sympy>=1.5,<=1.9",
+        "sympy>=1.5",
         "lea>=3.2.0",
         "overrides~=3.1",
         "python-rapidjson",
