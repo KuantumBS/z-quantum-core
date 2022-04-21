@@ -6,10 +6,10 @@
 name: publish-release
 
 on:
-  workflow_dispatch
   push:
     branches:
       - main
+      - zqs-997/fix-releases
 
 jobs:
   run-action:
